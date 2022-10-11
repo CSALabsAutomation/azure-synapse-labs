@@ -484,3 +484,13 @@ Click on download will redirect to Microsoft Store where you can get the Power B
 1. Click on Report in the left side navigation to start 
 
 ![report](./assets/report.jpg "Report")
+
+2. Drag SalesAmount from FactSales table to the center pane as shown below
+
+
+![page1](./assets/p11.jpg "page1")
+
+3. Drag Product from the DimProduct to the X-axis pane.
+
+
+![page1](./assets/p12.jpg "page1")

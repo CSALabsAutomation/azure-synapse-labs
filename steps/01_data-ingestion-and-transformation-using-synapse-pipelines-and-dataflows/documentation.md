@@ -511,3 +511,5 @@ Click on download will redirect to Microsoft Store where you can get the Power B
 9. In the new page select clustered column chart and Select SalesAmount from FactSales as Y axis and Date from DimDate as x axis.
 
 ![page5](./assets/p5.jpg "page5")
+
+10. Goto File and save your work.

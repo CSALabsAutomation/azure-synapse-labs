@@ -447,20 +447,20 @@ Click on download will redirect to Microsoft Store where you can get the Power B
 
 1. Open Power BI Desktop from the start menu.
 
-![open](./assets/openpbi.JPG "open")
+![open](./assets/openpbi.jpg "open")
 
 2. Click on Get Data then select "Azure Synapse Analytics workspace (Beta)"
 
-![getdata](./assets/getdata.JPG "get data")
+![getdata](./assets/getdata.jpg "get data")
 
 3. Sign in using your account which you used for the Azure Synapse Analytics and connect.
 
-![signin](./assets/signin.JPG "Sign IN")
+![signin](./assets/signin.jpg "Sign IN")
 
 4. Expand your workspace and select the tables as shown below (select FactSales first then others)
 
-![ws](./assets/ws.JPG "ws")
+![ws](./assets/ws.jpg "ws")
 
 5. Click on load. Power BI will now load data from the Azure Synapse Analytics to the Power BI Desktop
 
-![Load](./assets/load.JPG "Load data")
+![Load](./assets/load.jpg "Load data")

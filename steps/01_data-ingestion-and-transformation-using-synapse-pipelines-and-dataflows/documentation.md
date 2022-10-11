@@ -492,5 +492,22 @@ Click on download will redirect to Microsoft Store where you can get the Power B
 
 3. Drag Product from the DimProduct to the X-axis pane.
 
-
 ![page1](./assets/p12.jpg "page1")
+
+4. Click on + button below for adding new page
+5. Select Pie cart from the visualizations and Select SalesAmount from FactSales as Y axis and channel from DimChannel as x axis.
+6. In the same page select stacked column chart and Select OrderQuantity from FactSales as Y axis and channel from DimChannel as x axis.
+
+![page2](./assets/p2.jpg "page2")
+
+7. In the new page select stacked bar chart and Select SalesAmount from FactSales as Y axis and Customer from DimCustomer as x axis.
+
+![page3](./assets/p3.jpg "page3")
+
+8. In the new page select stacked bar chart and Select SalesAmount from FactSales as Y axis and CountryRegion from DimGeoraphy as x axis and city as legend.
+
+![page4](./assets/p4.jpg "page4")
+
+9. In the new page select clustered column chart and Select SalesAmount from FactSales as Y axis and Date from DimDate as x axis.
+
+![page5](./assets/p5.jpg "page5")

@@ -218,7 +218,7 @@ Select Variable to create below pipeline variables
 
   i.	Give name as **_``adworksSourceFolderPath``_** with default value **_SynapseRetailFiles_** (foldername where csv files are located)
   
- ii.	Create one more variable with name **_``tableName_``** with empty default value.
+ ii.	Create one more variable with name **_``tableName``_** with empty default value.
   
   
   2.	Go to pipeline Activities then select and drag **_GetMetadata_** under **General** section 

@@ -464,3 +464,23 @@ Click on download will redirect to Microsoft Store where you can get the Power B
 5. Click on load. Power BI will now load data from the Azure Synapse Analytics to the Power BI Desktop
 
 ![Load](./assets/load.jpg "Load data")
+
+### Manage Relationship
+
+1. Click on Model in the left side navigation to see the data model then click on "Manage Relationship"
+
+![model](./assets/datamodel.jpg "data model")
+
+2. Click on new to create a new relationship.
+
+![model](./assets/dm1.jpg "data model")
+
+3. Select "FactSales" and "DimDate". Then select OrderdateKey and DateKeyAltered as shown below. Click OK
+
+![model](./assets/dm2.jpg "data model")
+
+### Creating Analysis Report
+
+1. Click on Report in the left side navigation to start 
+
+![report](./assets/report.jpg "Report")

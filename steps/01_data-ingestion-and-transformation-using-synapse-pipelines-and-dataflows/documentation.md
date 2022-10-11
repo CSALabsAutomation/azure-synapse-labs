@@ -429,5 +429,38 @@ Select Variable to create below pipeline variables
    ![link tables](./assets/12-tables_link.jpg "tables linked")
    
  
+## Exercise 5 : Report in Power BI
 
+Reports are those elements of any BI and analytics tool that renders the very analytics characteristic to the tool. Power BI offers a convenient and effective methodology to build reports which can be used to drive excellent data analysis. The various functionalities provided by Power BI makes it one of the most favorite BI tools. Reports enable the stakeholders to dig deeper into data to reach the insights which help them in decision making.
 
+### Download and install Power BI Desktop
+
+For downloading Power BI Desktop click on below link and follow the instruction.
+
+[Download Power BI Desktop] (https://powerbi.microsoft.com/en-us/downloads/)
+
+Click on download will redirect to Microsoft Store where you can get the Power BI Desktop app.
+
+![download](./assets/download.jpg "download")
+
+### Load Data to Power BI from the Azure Synapse Analytics
+
+1. Open Power BI Desktop from the start menu.
+
+![open](./assets/openpbi.JPG "open")
+
+2. Click on Get Data then select "Azure Synapse Analytics workspace (Beta)"
+
+![getdata](./assets/getdata.JPG "get data")
+
+3. Sign in using your account which you used for the Azure Synapse Analytics and connect.
+
+![signin](./assets/signin.JPG "Sign IN")
+
+4. Expand your workspace and select the tables as shown below (select FactSales first then others)
+
+![ws](./assets/ws.JPG "ws")
+
+5. Click on load. Power BI will now load data from the Azure Synapse Analytics to the Power BI Desktop
+
+![Load](./assets/load.JPG "Load data")

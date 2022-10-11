@@ -490,26 +490,26 @@ Click on **_download_** will redirect to Microsoft Store where you can get the P
 
 ![page1](./assets/p11.jpg "page1")
 
-3. Drag **_Product** from the DimProduct to the X-axis pane.
+3. Drag **_Product_** from the DimProduct to the X-axis pane.
 
 ![page1](./assets/p12.jpg "page1")
 
 4. Click on **_+_** button below for adding new page
 5. Select **_Pie chart_** from the visualizations and Select **_SalesAmount_** from FactSales as Y axis and **_channel_** from DimChannel as x axis.
-6. In the same page select **_stacked column chart_** and Select **_OrderQuantity_** from FactSales as Y axis and channel from DimChannel as x axis.
+6. In the same page select **_stacked column chart_** and Select **_OrderQuantity_** from FactSales as Y axis and **_channel_** from DimChannel as x axis.
 
 ![page2](./assets/p2.jpg "page2")
 
-7. In the new page select stacked bar chart and Select SalesAmount from FactSales as Y axis and Customer from DimCustomer as x axis.
+7. In the new page select **_stacked bar chart_** and Select **_SalesAmount_** from FactSales as Y axis and **_Customer_** from DimCustomer as x axis.
 
 ![page3](./assets/p3.jpg "page3")
 
-8. In the new page select stacked bar chart and Select SalesAmount from FactSales as Y axis and CountryRegion from DimGeoraphy as x axis and city as legend.
+8. In the new page select **_stacked bar chart_** and Select **_SalesAmount_** from **_FactSales_** as Y axis and **_CountryRegion_** from DimGeoraphy as x axis and **_city_** as legend.
 
 ![page4](./assets/p4.jpg "page4")
 
-9. In the new page select clustered column chart and Select SalesAmount from FactSales as Y axis and Date from DimDate as x axis.
+9. In the new page select **_clustered column chart_** and Select **_SalesAmount_** from FactSales as Y axis and **_Date_** from DimDate as x axis.
 
 ![page5](./assets/p5.jpg "page5")
 
-10. Goto File and save your work.
+10. Goto File and **_save_** your work.

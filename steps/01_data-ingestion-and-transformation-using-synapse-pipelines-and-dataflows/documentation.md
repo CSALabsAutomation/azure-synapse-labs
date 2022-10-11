@@ -437,9 +437,9 @@ Reports are those elements of any BI and analytics tool that renders the very an
 
 For downloading Power BI Desktop click on below link and follow the instruction.
 
-[Download Power BI Desktop] (https://powerbi.microsoft.com/en-us/downloads/)
+Download Power BI Desktop (https://powerbi.microsoft.com/en-us/downloads/)
 
-Click on download will redirect to Microsoft Store where you can get the Power BI Desktop app.
+Click on **_download_** will redirect to Microsoft Store where you can get the Power BI Desktop app.
 
 ![download](./assets/download.jpg "download")
 
@@ -467,7 +467,7 @@ Click on download will redirect to Microsoft Store where you can get the Power B
 
 ### Manage Relationship
 
-1. Click on Model in the left side navigation to see the data model then click on "Manage Relationship"
+1. Click on **_Model_** in the left side navigation to see the data model then click on **_"Manage Relationship"_**
 
 ![model](./assets/datamodel.jpg "data model")
 
@@ -475,28 +475,28 @@ Click on download will redirect to Microsoft Store where you can get the Power B
 
 ![model](./assets/dm1.jpg "data model")
 
-3. Select "FactSales" and "DimDate". Then select OrderdateKey and DateKeyAltered as shown below. Click OK
+3. Select **_"FactSales"_** and **_"DimDate"_**. Then select **_OrderdateKey_** and **_DateKeyAltered_** as shown below. Click OK
 
 ![model](./assets/dm2.jpg "data model")
 
 ### Creating Analysis Report
 
-1. Click on Report in the left side navigation to start 
+1. Click on **_Report_** in the left side navigation to start 
 
 ![report](./assets/report.jpg "Report")
 
-2. Drag SalesAmount from FactSales table to the center pane as shown below
+2. Drag **_SalesAmount_** from FactSales table to the center pane as shown below
 
 
 ![page1](./assets/p11.jpg "page1")
 
-3. Drag Product from the DimProduct to the X-axis pane.
+3. Drag **_Product** from the DimProduct to the X-axis pane.
 
 ![page1](./assets/p12.jpg "page1")
 
-4. Click on + button below for adding new page
-5. Select Pie cart from the visualizations and Select SalesAmount from FactSales as Y axis and channel from DimChannel as x axis.
-6. In the same page select stacked column chart and Select OrderQuantity from FactSales as Y axis and channel from DimChannel as x axis.
+4. Click on **_+_** button below for adding new page
+5. Select **_Pie chart_** from the visualizations and Select **_SalesAmount_** from FactSales as Y axis and **_channel_** from DimChannel as x axis.
+6. In the same page select **_stacked column chart_** and Select **_OrderQuantity_** from FactSales as Y axis and channel from DimChannel as x axis.
 
 ![page2](./assets/p2.jpg "page2")
 

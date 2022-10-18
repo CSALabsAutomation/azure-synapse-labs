@@ -641,6 +641,25 @@ Write-Host "Assign Synapse Administrator Role to UAMI..."
 Invoke-RestMethod -Method Post -ContentType "application/json" -Uri $uri -Headers $headers -Body $body
 
 #------------------------------------------------------------------------------------------------------------
+# Assign signed in user with synapse workspace admin role
+#------------------------------------------------------------------------------------------------------------
+
+$token = (Get-AzAccessToken -Resource "https://dev.azuresynapse.net").Token
+$headers = @{ Authorization = "Bearer $token" }
+
+$uri = "https://$SynapseWorkspaceName.dev.azuresynapse.net/rbac/roleAssignments?api-version=2020-02-01-preview"
+
+#Assign Synapse Workspace Administrator Role to UAMI
+$body = "{
+  roleId: ""6e4bf58a-b8e1-4cc3-bbf9-d73143322b78"",
+  principalId: ""To Be Filled with signedin user object id""
+}"
+
+Write-Host "Assign Synapse Administrator Role to User..."
+
+Invoke-RestMethod -Method Post -ContentType "application/json" -Uri $uri -Headers $headers -Body $body
+
+#------------------------------------------------------------------------------------------------------------
 # CONTROL PLANE OPERATION: ASSIGN SYNAPSE APACHE SPARK ADMINISTRATOR TO AZURE ML LINKED SERVICE MSI
 # If AI Services are deployed, then Azure ML MSI needs Synapse Spark Admin rights to use Spark clusters as compute
 #------------------------------------------------------------------------------------------------------------

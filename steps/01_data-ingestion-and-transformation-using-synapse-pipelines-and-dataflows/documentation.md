@@ -132,9 +132,9 @@ In this section, you will use ADLS Gen2 Storage to create datasets. These datase
 1.	Select **+** under Parameter section to create parameters
     Create below mentioned two parameter:
     
-       i.	Name as **``folderPath``** with default value **``@dataset().fileName``**.
+       i.	Name as **``fileName``** with default value **``@dataset().fileName``**.
        
-      ii.	Name as **``fileName``** with default value **``@dataset().folderPath``**.
+      ii.	Name as **``folderPath``** with default value **``@dataset().folderPath``**.
     
     ![createParameter](./assets/07-adwork-create-parameters.jpg "create parameter")
 
@@ -189,15 +189,19 @@ In this section, you will use integration datasets for creating a dataflow for l
 
 12.	Select Sinktype as **_WorkspaceDB_**.
 
-13.	Select Database **_adworks_** and Table as **_``$tableName``_**.
+13.	Select Database **_adworks_** 
 
   ![Dataflow](./assets/df7.jpg "Create Dataflow")
-  
-14.	Select **_Recreate table_** as Table action under settings.
+
+14.   Open expression builder and select Table as **_``$tableName``_**.
+
+   ![Dataflow](./assets/exp.jpg "Create Dataflow")
+
+15.	Select **_Recreate table_** as Table action under settings.
 
   ![Dataflow](./assets/df9.jpg "Create Dataflow")
  
-15.	Select below checkboxes under **_Mapping_** section 
+16.	Select below checkboxes under **_Mapping_** section 
     
     i.	  Skip duplicate input column.
     
@@ -205,7 +209,7 @@ In this section, you will use integration datasets for creating a dataflow for l
     
  ![Dataflow](./assets/df8.jpg "Create Dataflow")
 
-16. Then click on **Validate** to validate created dataflow. Once dataflow has been validated publish it.
+17. Then click on **Validate** to validate created dataflow. Once dataflow has been validated publish it.
 
 ### Step 3 : Steps to Create Pipeline :
 

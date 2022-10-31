@@ -95,7 +95,7 @@ In this section, you will use ADLS Gen2 Storage to create datasets. These datase
     ![setProperties](./assets/07-adworks_raw_clear.jpg "set properties")   
 
 1.	Select  **+** under Parameter section to create parameters.
-    Create parameter with Name as *__folderPath__* with default value **``@dataset().folderPath``**.
+    Create parameter with Name as *__folderPath__* with default value **``@dataset().folderPath``**
     
     ![createParameter](./assets/07-raw-create-parameters.jpg "create parameter")
     
@@ -132,14 +132,14 @@ In this section, you will use ADLS Gen2 Storage to create datasets. These datase
 1.	Select **+** under Parameter section to create parameters
     Create below mentioned two parameter:
     
-       i.	Name as **``fileName``** with default value **``@dataset().fileName``**.
+       i.	Name as **``fileName``** with default value **``@dataset().fileName``**
        
-      ii.	Name as **``folderPath``** with default value **``@dataset().folderPath``**.
+      ii.	Name as **``folderPath``** with default value **``@dataset().folderPath``**
     
     ![createParameter](./assets/07-adwork-create-parameters.jpg "create parameter")
 
-1.  Under connections set folder path with  parameter value **``@dataset().folderPath``**.
-    set filename as **``@dataset().fileName``** and set first row as Header as **``True``**.
+1.  Under connections set folder path with  parameter value **``@dataset().folderPath``**
+    set filename as **``@dataset().fileName``** and set first row as Header as **``True``**
     
     ![setConnections](./assets/07-adwork-set-connections.jpg "set connections")
 
@@ -167,11 +167,11 @@ In this section, you will use integration datasets for creating a dataflow for l
 
 5.	Output stream name as **_``CSVSource``_**.
 
-6.	Select sourcetype **_integration dataset_** .
+6.	Select sourcetype **_integration dataset_** 
 
-7.	Select dataset  as **_adworksraw_**.
+7.	Select dataset  as **_adworksraw_**
 
-8.	Set below options as **true**.
+8.	Set below options as **true**
 
    i.	 Allow schema drift
    
@@ -183,17 +183,17 @@ In this section, you will use integration datasets for creating a dataflow for l
 
   ![Dataflow](./assets/df6.jpg "Create Dataflow")
   
-10.	Set output stream name as **_``adworksSink``_**.
+10.	Set output stream name as **_``adworksSink``_**
 
-11.	Select incoming stream as **_CSVSource_**.
+11.	Select incoming stream as **_CSVSource_**
 
-12.	Select Sinktype as **_WorkspaceDB_**.
+12.	Select Sinktype as **_WorkspaceDB_**
 
 13.	Select Database **_adworks_** 
 
   ![Dataflow](./assets/df7.jpg "Create Dataflow")
 
-14.   Open expression builder and select Table as **_``$tableName``_**.
+14.   Open expression builder and select Table as **_``$tableName``_**
 
    ![Dataflow](./assets/exp.jpg "Create Dataflow")
 
@@ -235,7 +235,7 @@ Select Variable to create below pipeline variables
   
   ![pipeline](./assets/pl3.png "Create pipeline")
   
-  5.	Select **Settings** and set dataset name as **_``raw``_**. 
+  5.	Select **Settings** and set dataset name as **_``raw``_**
   
   6.	After selecting dataset it will be populated with Dataset Properties.
   
@@ -249,7 +249,7 @@ Select Variable to create below pipeline variables
   
   ![pipeline](./assets/pl5.png "Create pipeline")
      
-  10.	Give name to foreach activity under section **General**.
+  10.	Give name to foreach activity under section **General**
    
   Select Section and select Sequential as **True** and  mention Items as **_``@activity('Get File List').output.childItems``_**
        
@@ -330,7 +330,7 @@ Select Variable to create below pipeline variables
 
 ![sourceSetting](./assets/10-03_source_setting.jpg "source setting")
 
-3.  Select **+** of SalesSource  to add dervived column under section **_schema modifier_** and name it as **_``SalesderivedColumn``_**.
+3.  Select **+** of SalesSource  to add dervived column under section **_schema modifier_** and name it as **_``SalesderivedColumn``_**
 
 ![schemaModifier](./assets/10-04_schema_modifier.jpg "schema modifier")
 
@@ -346,7 +346,7 @@ Select Variable to create below pipeline variables
 
 ![filterOn](./assets/10-07_filter_on.jpg "filter on")
 
-7.	Add Lookup to **_ResellerFilter_** by selecting LookUp  and Name it as **_``ResellerKeyLookup``_**.
+7.	Add Lookup to **_ResellerFilter_** by selecting LookUp  and Name it as **_``ResellerKeyLookup``_**
 
 ![lookup](./assets/10-08_lookup.jpg "lookup")
 
@@ -374,11 +374,11 @@ Select Variable to create below pipeline variables
 
 ![sourceSink](./assets/10-13_source_sink.jpg "source sink")
 
-15. Select **_Sink type_** as **_``WorkspaceDB``_**, Database **_adworkstarget_** from dropdown and mention Table as **_``FactSales``_**.
+15. Select **_Sink type_** as **_``WorkspaceDB``_**, Database **_adworkstarget_** from dropdown and mention Table as **_``FactSales``_**
 
 ![sinkType](./assets/10-14_sink_type.jpg "sink type")
 
-16. After successful creation of dataflow make sure you Validate by clicking on  **_Validate_** .
+16. After successful creation of dataflow make sure you Validate by clicking on  **_Validate_**
 
 ![validate](./assets/10-15_validate.jpg "validate")
 
@@ -386,7 +386,7 @@ Select Variable to create below pipeline variables
 
  ## Step 2 : Run Pipelines for Loading Fact tables
 
-1. Select **_Integrate_** and execute pipeline - **_FactTables_** .
+1. Select **_Integrate_** and execute pipeline - **_FactTables_**
 2.  After successfull execution of pipeline, verify loaded data under Data--> Lake database (adworkstarget)-->FactSales (Table) --> run select script with New SQL Script option.
 
 ## Exercise 4 : Relationship between dimension and fact tables
@@ -403,7 +403,7 @@ Select Variable to create below pipeline variables
  
     ![data_tab](./assets/12-Data_tab.jpg "data tab")
 
-1) To open the **adworkstarget** lake database , right click on **adworkstarget** database and click on **_Open_**.
+1) To open the **adworkstarget** lake database , right click on **adworkstarget** database and click on **_Open_**
     
      ![lake_db](./assets/12-open_lakedb.jpg "datalake")
 

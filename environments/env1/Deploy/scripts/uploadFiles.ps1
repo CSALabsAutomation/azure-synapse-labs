@@ -11,7 +11,7 @@ Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
 	{
        Install-Module -Name Az.Accounts -Force
     }
-
+az account set --subscription "cbb956ec-6c04-42ae-8428-91d91154f780"
 $uri = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Geography.csv";
 $bacpacFileName = "Geography.csv";
 

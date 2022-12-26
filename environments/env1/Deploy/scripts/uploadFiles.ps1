@@ -6,6 +6,18 @@ param(
 Write-Host "File uploading...."
 Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
 
+ #Install Synapse PowerShell Module
+  if (Get-Module -ListAvailable -Name "Az.Synapse") {
+      Write-Host "PowerShell Module Az.Synapse already installed."
+  } 
+  else {
+      Install-Module Az.Synapse -Force
+      Import-Module Az.Synapse
+      Install-Module Az.MachineLearningServices -Force
+      Import-Module Az.MachineLearningServices
+      
+  }
+
 $Uri = @(
     "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-test-dataset/test-invoice.pdf",
     "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-training-dataset/invoice1.pdf",

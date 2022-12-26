@@ -24,10 +24,10 @@ Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
 
 $uri = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Geography.csv";
 $bacpacFileName = "Geography.csv";
-#$storageaccount = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
-$storageaccountkey = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+#$storageaccount = Get-AzStorageAccount -ResourceGroupName $ResourceGroupName;
+$storageaccountkey = Get-AzStorageAccountKey -ResourceGroupName $ResourceGroupName -Name $StorageAccountName;
 
-$ctx = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey.Value[0]
+$ctx = New-AzStorageContext -StorageAccountName $StorageAccountName -StorageAccountKey $storageaccountkey.Value[0]
 
 Invoke-WebRequest -Uri $uri -OutFile $bacpacFileName 
 Set-AzStorageBlobContent -File $bacpacFileName -Container "raw" -Blob 'Geography.csv' -Context $ctx

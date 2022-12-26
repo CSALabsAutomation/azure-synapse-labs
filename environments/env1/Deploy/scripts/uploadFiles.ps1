@@ -17,6 +17,21 @@ Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
       Import-Module Az.MachineLearningServices
       
   }
+ if ((Get-Module -ListAvailable Az.Accounts) -eq $null)
+	{
+       Install-Module -Name Az.Accounts -Force
+    }
+
+$uri = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Geography.csv";
+$bacpacFileName = "Geography.csv";
+#$storageaccount = Get-AzStorageAccount -ResourceGroupName $Resourcegroupname;
+$storageaccountkey = Get-AzStorageAccountKey -ResourceGroupName $Resourcegroupname -Name $RawDataLakeAccountName;
+
+$ctx = New-AzStorageContext -StorageAccountName $RawDataLakeAccountName -StorageAccountKey $storageaccountkey.Value[0]
+
+Invoke-WebRequest -Uri $uri -OutFile $bacpacFileName 
+Set-AzStorageBlobContent -File $bacpacFileName -Container "raw" -Blob 'Geography.csv' -Context $ctx
+
 
 $Uri = @(
     "https://sa1ahoode.blob.core.windows.net/fr-datasets/neural-model-test-dataset/test-invoice.pdf",

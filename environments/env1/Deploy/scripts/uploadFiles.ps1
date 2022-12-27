@@ -14,7 +14,7 @@ Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
 Write-Host "Az Account installed...."
 try {  
   
-Set-AzContext -SubscriptionName "CS Labs Internal"
+
 
 $uri = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Geography.csv";
 $bacpacFileName = "Geography.csv";

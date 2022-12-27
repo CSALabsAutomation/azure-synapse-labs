@@ -11,7 +11,7 @@ Write-Host "RG: $($ResourceGroupName) | SA: $($StorageAccountName)"
 	{
        Install-Module -Name Az.Accounts -Force
     }
-    
+  try {  
 Set-AzContext -Subscription "cbb956ec-6c04-42ae-8428-91d91154f780"
 
 $uri = "https://raw.githubusercontent.com/CSALabsAutomation/azure-synapse-labs/main/environments/env1/Sample/Artifacts/TaxiDataFiles/Geography.csv";
@@ -23,4 +23,9 @@ $ctx = New-AzStorageContext -StorageAccountName $StorageAccountName -StorageAcco
 
 Invoke-WebRequest -Uri $uri -OutFile $bacpacFileName 
 Set-AzStorageBlobContent -File $bacpacFileName -Container "fr-assets" -Blob 'Geography.csv' -Context $ctx
+}
+catch {
+    Write-Host 'Something went wrong'
+    Write-Host $_
+}
 
